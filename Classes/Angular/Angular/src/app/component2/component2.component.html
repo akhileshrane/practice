@@ -1,0 +1,32 @@
+<br>
+<br>
+<br>
+<div style="text-align: center; display: inline-block;">
+    <textarea wrap="hard">
+        Object myObj:
+        {{myObj.name}}
+        {{myObj.location}}
+        {{myObj.age}}
+    </textarea>
+    <br><br>
+  <table border="2" style="width: 150px; height: 150px;">
+    <thead>
+      <th>Name</th>
+      <th>ID</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td id=11>Akhilesh</td>
+        <td id=12>52552</td>
+      </tr>
+      <tr>
+        <td id=21>Rao</td>
+        <td id=22>52554</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)='changeVal()'>Change values!</button> <br>
+  <label>Enter new data</label><input type="text" id="NewVal"/>
+  Currency:{{1234 | currency :"USD"}}
+  {{123.345632 | number:'4.2-5'}}
+</div>

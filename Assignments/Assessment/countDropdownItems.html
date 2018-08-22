@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function calc(){
+                var listNum=document.getElementById("list").childElementCount;
+                var l1=document.getElementById("l1").innerText;
+                var l2=document.getElementById("l2").innerText;
+                var l3=document.getElementById("l3").innerText;
+                var l4=document.getElementById("l4").innerText;
+                var l5=document.getElementById("l5").innerText;
+                alert(listNum+" elements are present in the list and they are: \n" +l1+"\n"+l2+"\n"+l3+"\n"+l4+"\n"+l5);
+            }
+        </script>
+        <style>
+            select{
+                align-self: center;
+            }
+        </style>
+    </head>
+    <body>
+        <select name="Dropdown List" id="list">
+            <option value="one" id="l1">Item 1</option>
+            <option value="two" id="l2">Item 2</option>
+            <option value="three" id="l3">Item 3</option>
+            <option value="four" id="l4">Item 4</option>
+            <option value="five" id="l5">Item 5</option>
+        </select> <br>
+        <input type="button" onclick="calc()" value="Calculate number of items in list" />
+    </body>
+</html>
+
+

@@ -1,0 +1,18 @@
+<html>   
+<head>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+</head>   
+<body> <button id="Add">Click to add textbox</button> <button id="Remove">Click to remove textbox</button>  
+    <div id="textboxDiv"></div>  
+    <script>
+        $(document).ready(function() {  
+            $("#Add").on("click", function() {  
+                $("#textboxDiv").append("<div><br><input type='text'/><br></div>");  
+            });  
+            $("#Remove").on("click", function() {  
+                $("#textboxDiv").children().last().remove();  
+            });  
+        });  
+    </script>  
+</body>  
+</html>

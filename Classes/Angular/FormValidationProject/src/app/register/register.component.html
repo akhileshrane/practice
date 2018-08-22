@@ -1,0 +1,31 @@
+<base href="/">
+<br><br><br>
+<div style="text-align: center" >
+  <form [formGroup]="regForm">
+    User name:  <input type="text" formControlName="username"> <br><br>
+    Password:  <input type="password" formControlName="pwd" ><br> <br>
+    Location:  <input type="text" formControlName="loc" ><br> <br>
+    <input type="submit" value="Next" (click)="register(regForm.value)"> <br>
+  </form>
+</div>
+<br>
+<div style="text-align: center; visibility: unset;" >
+<table border="3" style="width: 150px; height: 100px;" >
+  <thead item-width="50px">
+    <th>User Name:</th>
+    <th>Password:</th>
+    <th>Location</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td id='11'></td>
+      <td id='12'></td>
+      <td id='13'></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<br>
+<a routerLink='/'>Go to the front page.</a>
+<router-outlet></router-outlet>

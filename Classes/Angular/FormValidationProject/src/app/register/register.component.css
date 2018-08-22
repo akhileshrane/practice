@@ -1,0 +1,12 @@
+form{
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 10px 10px 10px 10px;
+    background-color:goldenrod;
+    text-justify: auto;
+    opacity: 10%
+}
+
+input{
+    display: inline-block;
+}

@@ -1,0 +1,29 @@
+
+<select>
+  <option>{{arr[0]}}</option>
+  <option>{{arr[1]}}</option>
+  <option>{{arr[2]}}</option>
+  <option>{{arr[3]}}</option>
+  <option>{{arr[4]}}</option>
+  <option>{{arr[5]}}</option>
+  <option>{{arr[6]}}</option>
+</select>
+<br><br><br>
+<!--For loop in angular:-->
+
+<select>
+  <option>Using a for loop here.</option>
+  <option *ngFor="let i of arr">{{i}}</option>
+</select> <br>
+<!--if-->
+Value:{{isValid}} <br>
+<span *ngIf="isValid;else con1">Value is true</span>
+<br><ng-template #con1>Value is false</ng-template>
+<p>
+  new-component works!
+</p>
+<br><br>
+<h2>{{msg}}</h2>
+
+<button (click)="open()">Click me!</button> <br>
+<label>Type something</label><input type="text" (change)="change()" id="Text">

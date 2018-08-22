@@ -1,0 +1,48 @@
+<html>
+    <head> <title> Dynamic Tables s</title>
+       <style>
+            label{
+                display: inline-block;
+                width: 400px;
+            }
+        </style>
+        <script>
+            function changeContent(){
+                var row=document.getElementById("row").value;
+                var col=document.getElementById("col").value;
+                var data1=document.getElementById("data").value;
+                
+                if(row==1){
+                    if(col==1)
+                        document.getElementById("row11").innerText=data1;
+                    else if(col==2)
+                        document.getElementById("row12").innerText=data1;
+                    
+                }
+                else if(row==2){
+                    if(col==1)
+                        document.getElementById("row21").innerText=data1;
+                
+                    if(col==2)
+                        document.getElementById("row22").innerText=data1;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table border="2"> 
+            <tr>
+                <td id="row11"> Row 1 Cell 1 </td>
+                <td id="row22"> Row 1 Cell 2 </td>
+            </tr>
+             <tr>
+                <td id="row12"> Row 1 Cell 2 </td>
+                <td id="row22"> Row 2 Cell 2 </td>
+            </tr>
+        </table> <br>
+        <label > Enter the row number that you wish to modify: </label> <input type=text id="row" /> <br>
+        <label> Enter the col number that you wish to modify: </label> <input type=text id="col" />  <br>
+        <label > Enter the new data: </label> <input type=text id="data" /><br>
+        <input type="button" value="Change Contents" onclick="changeContent()"/>
+    </body>
+</html>

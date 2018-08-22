@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function showLocation(position){
+		var latitude = position.coords.latitude;
+		var longitude = position.coords.longitude;
+		alert("Latitude: "+ latitude+ "\n" +"Longitude: "+ longitude);
+	}
+	
+	function errorHandler(err){
+		if(err.code==1)
+			alert("Error: Access denied");
+			
+		else(err.code==2)
+			alert("Error: Location unavailable");			
+	}
+	
+	function getLocation()
+	{
+		if(navigator.geolocation){
+			//set timeout
+			var options={timeout:10000};
+			navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+		} 
+		else{
+			alert("Error");
+		}
+	}
+	
+</script>
+	</head>
+<body>
+	<form>
+		<input type=button onClick="getLocation();" value="Get Location">
+	</form>
+</body>
+</html>

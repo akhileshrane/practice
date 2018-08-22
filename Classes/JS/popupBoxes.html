@@ -1,0 +1,54 @@
+<html>
+    <head>Popups <br>
+    </head>
+    <body>
+        <script>
+            function show_alert(){
+                alert("Hello!");
+                return ("Hola");
+            }
+            
+            function confirmBox(){
+                var confirmVal=confirm("Are you sure?");
+                if(confirmVal==true)
+                    window.open('','_self').close();
+                else
+                    alert("You cancelled");
+            }
+            
+            function promptBox(){
+                var promptVal=prompt("Please enter your name","John Doe");
+                if(promptVal==null)
+                    alert("please enter your name.");
+                else if(promptVal=="")
+                        alert("You did not enter anything");
+                      else alert("Hello, "+promptVal);
+            }
+            
+            function currencyConverter(){
+                var inrVal=document.getElementById("inr").value;
+                var usdVal=document.getElementById("usd").value;
+                if(inrVal==0){
+                    usdVal=usdVal*67;
+                    alert("Value in INR: " +usdVal+"₹");
+                    document.getElementById("usd").value=0;                   
+                }
+                if(usdVal==0){
+                    inrVal=inrVal/67;
+                    alert("Value in USD: " +inrVal+"$");
+                    document.getElementById("inr").value=0; 
+                }
+            }
+        </script>
+        <br>
+        <input type="button" onclick="promptBox()" value="Click Me"/> <br><br>
+        <input type="button" onclick="show_alert()" value="Show Popup"/><br><br>
+        <input type="button" onclick="confirmBox()" value="Quit?"/> <br><br>
+        <label> Currency Converter </label> <br><br>
+        <label> INR: </label> <input type="number" value="0" id="inr"/> <br><br>
+        <label> USD: </label> <input type="number" value="0" id="usd"/> <br><br>
+        <input type=button onclick="currencyConverter()" value="Convert!"/>      
+        <button onmouseover="document.getElementById('demo').innerHTML=Date()">What's the time?</button>
+        <p style=color:dodgerblue id="demo"></p>
+        </body>
+</html> 

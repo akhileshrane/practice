@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.new-text::after {
+					content: " <- NEW!"; 
+					color: green;
+			}
+
+			.some-text::after {
+					content: " <- SOME";
+					color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="some-text">Here is some text.</p>
+		<p>Here is some normal text .</p>
+		<p class="new-text">This is new text.</p>
+	</body>
+</html>	

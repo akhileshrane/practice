@@ -1,0 +1,30 @@
+<html>
+<head>
+	<style>
+		p::first-line {
+			color:red;
+			font-variant:small-caps;
+			}
+		
+		p::selection {
+			color:blue;
+			}
+		
+		.newText::after {
+			content: "New text added";
+			color:magenta;
+			}
+		
+		.someText::before {
+			content : "New text";
+			color: teal;
+			}
+	</style>
+</head>
+<body>
+	<p> This is the first line in a paragraph. <br> This is the second one. </p>
+	<p class=newText> Here is some text </p>
+	<p> Here's some normal text </p>
+	<p class=someText> Here is some more text </p>
+</body>
+</html>

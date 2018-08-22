@@ -1,0 +1,15 @@
+<html>
+<head>
+    <script>
+        function changeLink(){
+            document.getElementById('myAnchor').innerHTML="Wiki";
+            document.getElementById('myAnchor').href="https://www.wikipedia.org";
+            document.getElementById('myAnchor').target="_blank";
+        }
+    </script>
+    </head>
+    <body>
+    <a id="myAnchor" href="http://www.google.com" target="_blank">Google</a>
+        <input type="button" onclick="changeLink()" value=ChangeLink>
+    </body>
+</html>

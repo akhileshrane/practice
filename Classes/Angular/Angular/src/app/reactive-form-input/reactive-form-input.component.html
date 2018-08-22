@@ -1,0 +1,13 @@
+<p>
+  reactive-form-input works!
+</p>
+
+<div style="display:inline-block">
+  <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+    Enter username:<input type="text" formControlName="username" ngModel>
+    <br>
+    Enter password:<input type="password" formControlName="password" ngModel>
+    <br>
+    <input type="submit" value="submit">
+  </form>
+</div>

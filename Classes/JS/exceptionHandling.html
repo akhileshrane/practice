@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Exception Handling</title>       
+        <script>
+            function showException(){
+                var x=prompt("Enter a number greater than 10","");
+                try{
+                   /* aleert("Welcome to JavaScript"); */
+                    if(x<10)
+                        throw ("Err2");
+                    else if(isNaN(x))
+                        throw ("Err3");
+                }
+                catch(err){
+                   /* str="There is an error";
+                    if(!confirm(str))
+                        document.location.href="http://www.google.com"; */
+                    if(err=="Err2")
+                        alert("Error! The number is too low.");
+                    if(err=="Err3")
+                        alert("Error! The value isn't a number.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Accept" onclick="showException()"/>
+    </body>
+</html>
+ 

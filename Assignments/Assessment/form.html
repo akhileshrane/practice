@@ -1,0 +1,55 @@
+<html>
+    <head> <title>Q1:Form </title> </head>
+   
+    <script>
+        function FormSubmit(){
+            var firstName=document.getElementById("fName").value;
+            var lastName=document.getElementById("lName").value;
+            var emailID=document.getElementById("email").value;
+            var UserID=document.getElementById("UID").value;
+            var password1=document.getElementById("pwd").value;
+            var password2=document.getElementById("pwd2").value;
+
+            if(password1!=password2)
+                document.getElementById("pwderror").innerText = "Passwords do not match";
+            
+            if(!firstName)
+                document.getElementById("fnameerr").innerText = "First name missing";
+            
+            if(!lastName)
+                document.getElementById("lnameerr").innerText = "Last name missing";
+            
+            if(!emailID)
+               document.getElementById("emailerr").innerText = "Please enter your email ID";
+            
+            if(!UserID)
+                document.getElementById("uiderr").innerText ="Please enter your user ID";
+            
+            if(!password1)
+               document.getElementById("p1err").innerText ="Please enter your password";
+            }
+        
+    </script>
+    
+    <style>
+        form{
+            align-self: auto; 
+            color: black; 
+            display: inline-block;
+        }
+    </style>
+    
+    
+    <body>
+        <form>
+            <label> First Name: </label> <input type="text" id="fName"/> <label id="fnameerr"> </label> <br> <br> 
+            <label> Last Name: </label> <input type="text" id="lName" /> <label id="lnameerr"> </label> <br> <br>  
+            <label> Email: </label> <input type="email" id="email" /> <label id="emailerr"> </label> <br> <br> 
+            <label> User ID: </label> <input type="text" id="UID" /> <label id="uiderr"> </label> <br> <br> 
+            <label> Password: </label> <input type="password" id="pwd" /> <label id="p1err"> </label> <br> <br> 
+            <label> Confirm password: </label> <input type="text" id="pwd2" /> <label id="pwderror"> </label> <br>
+            <input type="button" value="Submit" onclick="FormSubmit()" />
+
+        </form>
+    </body>
+</html>

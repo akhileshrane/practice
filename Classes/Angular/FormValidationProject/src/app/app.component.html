@@ -1,0 +1,11 @@
+<base href="/">
+<div style="text-align: center" >
+  <form [formGroup]="formdata">
+    User name:  <input type="text" formControlName="username"> <br><br>
+    Password:  <input type="password" formControlName="pwd" ><br> <br>
+    <input type="submit" value="Next" (click)="onClickSubmit(formdata.value)"> <br>
+  </form>
+</div>
+
+<a routerLink='test-cmp' target="_blank"></a>
+<router-outlet></router-outlet>

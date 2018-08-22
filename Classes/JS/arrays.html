@@ -1,0 +1,33 @@
+ <html>
+    <head>
+        <title>My "first" JS page</title>
+    </head>
+    <body>
+        <script type="text/javascript">;            
+            var names= new Array();
+            var empID= ["0","1","2"]
+            names[0]="Akhilesh";
+            names[1]="Aditya";
+            names[2]="Jai";
+            
+            
+       /*     for(var index in names){
+            document.write(names[index]);
+            document.write("<br>");
+            } */
+            
+            var combinedArr=names.concat(empID);
+            for(var index in combinedArr){
+            document.write(combinedArr[index]);
+            document.write("<br>");
+            }
+            
+            var sortedArr=document.write(names.sort());
+            for(var index in sortedArr){
+            document.write(sortedArr[index]);
+            document.write("<br>");
+            }
+            
+        </script>
+    </body>
+</html>

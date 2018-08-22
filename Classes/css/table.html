@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            form p{
+                display: table-caption;
+                caption-side: bottom;
+                width: 300px;
+                color: #999;
+                font-style: italic;
+            }
+            
+            form label,form input{
+                display: table-cell;
+                margin-bottom: 10px;
+            }
+            
+            form label{
+                width: 200px;
+            }
+            
+            form input{
+                width: 300px;
+            }
+            
+            html{
+                font-family: times new roman;
+            }
+            
+            form{
+                display: table;
+                margin: 0 auto;
+            }
+            
+            form div{
+                display: table-row;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p>Enter your name and age.</p>
+            <div>
+                <label for=fname>First Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for=lname>Last Name:</label>
+                <input type="text" id="lname">
+            </div>
+            <div>
+                <label for=age>Age:</label>
+                <input type="number" id="age">
+            </div>
+        </form>
+    </body>
+</html>

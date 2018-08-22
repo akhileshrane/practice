@@ -1,0 +1,9 @@
+<div style="display:inline-block">
+  <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)">
+    Enter username:<input type="text" name="username" ngModel>
+    <br>
+    Enter password:<input type="password" name="password" ngModel>
+    <br>
+    <input type="submit" value="submit" (click)="validate(userlogin.value)">
+  </form>
+</div>

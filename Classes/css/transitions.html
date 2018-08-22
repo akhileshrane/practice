@@ -1,0 +1,39 @@
+<html>
+    <head>
+          <style>
+              div{
+                    transition-delay: 0s;
+                    transition-duration: 12s;
+                    width:100px;
+                    height:70px;
+                    background: chartreuse;
+                }
+            
+            div:hover{
+                width:40%;
+                    }
+            
+            #div1 {transition-timing-function: cubic-bezier(steps(5);}
+            #div2 {transition-timing-function: ease-in;}
+            #div3 {transition-timing-function: ease-in-out;}
+            #div4 {transition-timing-function: ease-out;}
+            #div5 {transition-timing-function: step-end;}
+            #div6 {transition-timing-function: linear;}
+            
+              .box1{
+                grid-column: 2;
+                grid-row: 1;
+            }
+              
+        </style>
+    </head>
+    <body>
+    <h1>Transitions</h1>
+        <div id="div1"dz> Cubic Bezier </div>
+        <div id="div2"> Ease in </div>
+        <div id="div3"> Ease in out </div>
+        <div id="div4"> Ease out </div>
+        <div id="div5"> Step End </div>
+        <div id="div6"> Linear </div>
+    </body>
+</html>

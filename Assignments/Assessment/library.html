@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+    </head>
+    <script>
+        var library = [{
+                        author: "Bill Gates",
+                        title: "The Road Ahead",
+                        readingStatus: true
+                       },{
+                        author: 'Steve Jobs',
+                        title: 'Walter Isaacson',
+                        readingStatus: true
+                       },{
+                        author: 'Suzanne Collins',
+                        title:  'Mockingjay: The Final Book of The Hunger Games',
+                        readingStatus: false
+                       },{
+                        author: "Bill Gates", 
+                        title: "Showing up for life",         
+                        readingStatus: false
+                       },{
+                        author: "Mark Zuckerberg", 
+                        title:  "Mark Zuckerberg: A Biography of the Facebook Billionaire",
+                        readingStatus: false 
+                       }]; 
+        
+        function displayAllDetails(){
+            var books2="";
+            var i2;
+            for(i2 in library){
+                    books2+= library[i2].title;
+                    books2+= "\n"
+                }
+            
+            var books2= books2.toString();
+            alert("The books available are: \n"+books2);
+        
+        }
+        
+        function recognizeReadBooks(){
+            var books="";
+            var i;
+            for(i in library){
+                if(library[i].readingStatus==true){
+                    books+= library[i].title;
+                    books+= "\n"
+                }
+            }
+            var books1= books.toString();
+            alert("The books read by you are: \n"+books1);
+        }
+        
+    </script>
+    
+    <body>
+        <input type=button onclick="displayAllDetails()" value="Display details"/> <br><br>
+        <input type=button onclick="recognizeReadBooks()" value="Show books that have already been read." />
+    </body>
+</html>

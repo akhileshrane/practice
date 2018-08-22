@@ -1,0 +1,59 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>             
+            function inrToDollars(){
+                var inrVal=document.getElementById("inr").value;
+                var usd=inrVal/68.71;
+                alert(inrVal+"₹: "+usd+" $");
+            }
+            
+             function inrToPound(){
+                var inrVal=document.getElementById("inr").value;
+                var pound=inrVal/90.66;
+                alert(inrVal+"₹: "+pound+" pounds");
+            }
+            
+             function inrToAus(){
+                var inrVal=document.getElementById("inr").value;
+                var Aus=inrVal/51.04;
+                alert(inrVal+"₹: "+Aus+" Australian Dollars");
+            }
+            
+             function inrToEuro(){
+                var inrVal=document.getElementById("inr").value;
+                var Euro=inrVal/80.59;
+                alert(inrVal+"₹: "+Euro+" Euros");
+            }
+            
+             function inrToYen(){
+                var inrVal=document.getElementById("inr").value;
+                var Yen=inrVal/0.62;
+                alert(inrVal+"₹: "+Yen+" Yen");
+            }
+            
+            function reset(){
+                document.getElementById("inr").value=0; 
+            }
+            
+            function forToInd(){
+                var usdVal=document.getElementById("usd").value;
+                inrVal=usdVal*68.71;
+                alert(usdVal+"$: "+inrVal+" ₹:");
+            }
+            
+        </script>
+        <br>
+        <label> Currency Converter </label> <br><br>
+        <label> INR: </label> <input type="number" value="0" id="inr"/> <br><br>
+        <!--<label> USD: </label> <input type="number" value="0" id="usd"/> <br><br> -->        
+        <input type=button onclick="inrToDollars()" value="INR: Convert to Dollars!"/>
+        <input type=button onclick="forToInd()" value="USD: Convert to Inr!"/> <br><br>
+        <input type=button onclick="inrToPound()" value="Convert to Pounds!"/> <br><br>
+        <input type=button onclick="inrToAus()" value="Convert Australian Dollars!"/> <br><br>
+        <input type=button onclick="inrToEuro()" value="Convert to Euro!"/> <br><br>
+        <input type=button onclick="inrToYen()" value="Convert to Yen!"/> <br><br>
+        <input type="button" onclick=reset() value="Reset" />
+        </body>
+</html> 

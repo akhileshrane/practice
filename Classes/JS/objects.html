@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function stringObj(){
+                var str="Hello";
+                var str1="Understanding String object methods.";   
+                document.write("charAt: "+ str.charAt(2)+"<br><br>");
+                document.write("concat: "+ str.concat(str1)+"<br><br>");
+                document.write("toLowercase: "+ str.toLowerCase()+"<br><br>");
+                document.write("toUpperCase: "+ str.toUpperCase()+"<br><br>");
+                document.write("split: "+ str.split("e",2));                           
+            }
+            function dateObj(){
+                var date= new Date();
+                document.write("Date: "+ date.getDate()+"<br><br>");
+                document.write("Day: "+ date.getDay()+"<br><br>");
+                document.write("Year: "+ date.getFullYear()+"<br><br>");
+                document.write("Hours: "+ date.getHours()+"<br><br>");
+                document.write("Minutes: "+ date.getMinutes()+"<br><br>");
+                /*document.write("concat: "+ str.concat(str1)+"<br><br>");
+                document.write("toLowercase: "+ str.toLowerCase()+"<br><br>");
+                document.write("toUpperCase: "+ str.toUpperCase()+"<br><br>");
+                document.write("split: "+ str.split("e",2));          */                 
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="stringObj()" value=StringOps />
+        <input type="button" onclick="dateObj()" value=DateOps />
+    </body>
+</html>
